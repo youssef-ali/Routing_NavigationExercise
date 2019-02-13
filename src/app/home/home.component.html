@@ -1,0 +1,6 @@
+<h2>Home Page</h2>
+  <ul class="list" *ngFor='let archive of archivesList'>
+    <li class="list list-item">
+      <a [routerLink]="['/blogArchiveItem', archive.year, archive.month]">{{archive.year}}/{{archive.month}}</a>
+    </li>
+  </ul>
